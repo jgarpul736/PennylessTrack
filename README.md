@@ -1,12 +1,12 @@
 # PennylessTrack
 
-Descripción breve: qué hace el proyecto y para qué sirve.
+Proyecto de Puesta en Producción Segura con su login, panel del usuario y donde el usuario podrá meter datos o importarlos
 
 ## Estructura del proyecto
 
 ```
 PennylessTrack/
-├── README.md
+|-- README.md
 ```
 
 ## Instalación
