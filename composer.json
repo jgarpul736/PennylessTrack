@@ -1,0 +1,15 @@
+{
+    "name": "alumnot/pennyless-track",
+    "autoload": {
+        "psr-4": {
+            "Alumnot\\PennylessTrack\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Jesus Garcia Pulido",
+            "email": "jesusgarciapulidoj@gmail.com"
+        }
+    ],
+    "require": {}
+}
