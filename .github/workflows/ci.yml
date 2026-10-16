@@ -12,3 +12,5 @@ jobs:
       - uses: actions/checkout@v4
       - name: Comprobación básica
         run: echo "Aquí irían tests, análisis estático o escaneo de secretos"
+      - name: Fallo a propósito (prueba de status check)
+        run: exit 1
