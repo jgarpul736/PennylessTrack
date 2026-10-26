@@ -1,0 +1,18 @@
+title = "gitleaks config PennylessTrack"
+
+[extend]
+useDefault = true
+
+[allowlist]
+description = "Falsos positivos conocidos"
+paths = [
+  '''docs/ejemplo\.md''',
+  '''vendor/''',
+  '''composer\.lock''',
+]
+
+[[rules]]
+id = "corp-id"
+description = "Token corporativo CORP_ID"
+regex = '''CORP_ID_[0-9]{5}'''
+keywords = ["corp_id"]
