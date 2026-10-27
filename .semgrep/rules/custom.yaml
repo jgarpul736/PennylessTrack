@@ -1,0 +1,12 @@
+rules:
+  - id: no-var-dump-in-prod
+    pattern: var_dump(...)
+    message: "No uses var_dump() en el código final. Usa un logger."
+    languages: [php]
+    severity: WARNING
+
+  - id: no-sql-concatenation
+    pattern: mysqli_query($CONN, "..." . $VAR)
+    message: "Consulta SQL concatenada. Usa consultas preparadas (PDO)."
+    languages: [php]
+    severity: ERROR
