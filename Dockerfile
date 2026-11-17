@@ -1,4 +1,4 @@
-FROM php:8.4-cli
+FROM php:8.4.27-cli
 
 # Herramientas que necesita Composer para descomprimir paquetes
 RUN apt-get update \
