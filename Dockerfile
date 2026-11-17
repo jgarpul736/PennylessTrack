@@ -1,4 +1,4 @@
-FROM php:8.3-cli
+FROM php:8.4-cli
 
 # Herramientas que necesita Composer para descomprimir paquetes
 RUN apt-get update \
@@ -18,6 +18,10 @@ RUN composer install --no-dev --no-interaction --prefer-dist --no-scripts --no-a
 COPY src/ ./src/
 COPY public/ ./public/
 RUN composer dump-autoload --optimize --no-dev
+
+# Usuario sin privilegios
+RUN useradd --system --no-create-home appuser
+USER appuser
 
 EXPOSE 8000
 
