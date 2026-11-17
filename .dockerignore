@@ -1,0 +1,11 @@
+.git
+.github
+.semgrep
+.semgrepignore
+.gitleaks.toml
+.pre-commit-config.yaml
+vendor/
+tests/
+prueba.txt
+.env
+.DS_Store
