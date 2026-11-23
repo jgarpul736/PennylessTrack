@@ -7,7 +7,7 @@ use Alumnot\PennylessTrack\Version;
 header('Content-Type: application/json');
 $path = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
 
-if ($path === '/healthz') {
+if ($path === '/health') {
     echo json_encode(Health::status());
     exit;
 }
